@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: var(--Font-Color);
+    background: var(--Background);
+
+    --orange: #F66F4D;
+    --Background: #FAF8ED;
+    --Font-Color: #5B5F62;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Navbar */
+
+#Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 50px ;
+    top: 0;
+    left: 0;
+    width: 90vw;
+}
+
+.OngletContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+.Onglet {
+    color: #5B5F62;
+    text-decoration: none;
+    position: relative;
+}
+
+.Onglet:after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #F66F4D;
+    display: block;
+    transition: width 0.2s ease-in-out;
+}
+
+.Onglet:hover:after {
+    width: 100%;
+}
+
+.Book {
+    padding: 15px 40px;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #F66F4D;
+    color: #F66F4D;
+    border-radius: 30px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.Book:hover {
+    background: #F66F4D;
+    color: #FAF8ED;
+}
+
+/* Hero */
+
+#Hero {
+    width: 100vw;
+    height: 75vh;
+    background-image: url('../Assets/Image.png');
+    background-position: center right 10%;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 50px;
+}
+
+.HeroLeft {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.HeroLeft > h1 {
+    letter-spacing: 5px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+
+.HeroLeft > p {
+    font-size: 0.9rem;
+}
+
+.ChosePlace {
+    background: white;
+    border-radius: 50px;
+}
+
+.ChoiceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 30px;
+    font-weight: lighter;
+}
+
+.ChoiceContainer > li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+#Input {
+    border: 0;
+    outline: 0px;
+}
+
+.Search {
+    font-size: 1.5rem;
+    padding: 10px 13px;
+    border-radius: 50%;
+    background: #F66F4D;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Categories */
+
+#Categories, #Destination {
+    margin: 50px 0;
+    padding: 0 50px;
+    position: relative;
+    width: 100vw;
+}
+
+.TopCate, .TopDesti {
+    width: 27%;
+}
+
+.Title {
+    color: black;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.Text {
+    font-size: 0.9rem;
+    margin: 10px 0 30px 0;
+}
+
+.leftButton, .rightButton {
+    position: absolute;
+    top: 0;
+    padding: 11px 13px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s
+}
+
+.rightButton {
+    right: 5%;
+    background: black;
+    color: #FAF8ED;
+}
+
+.rightButton:hover {
+    background: transparent;
+    color: black;
+}
+
+.leftButton:hover{
+    background: black;
+    color: #FAF8ED;
+}
+
+.leftButton {
+    right: 10%;
+}
+
+.CategoriesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ImageDestination {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative
+}
+
+/* Adventure */
+
+#Adventure {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    background-image: url('../Assets/Images-1.png');
+    background-position: center left 10%;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    padding: 0 50px;
+    margin: 100px 0;
+}
+
+.AdventureRight {
+    width: 50%
+}
+
+.GreatInfoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.GreatInfo {
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+    background: white;
+    border-radius: 9px;
+    width: min-content;
+    height: 190px;
+    width: 190px;
+    padding-left: 60px;
+}
+
+.GreatInfo > h1 {
+    color: #F66F4D;
+}
+
+.GreatInfo > p {
+    margin-top: 20px
+}
+
+/* Destination */
+
+.BottomDesti {
+    width: 100%;
+}
+
+.DestinationContainer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.Destination {
+    border: 1px solid white;
+    border-radius: 9px;
+    margin: 0 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.Destination > h3 {
+    color: black;
+    font-size: 1rem;
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.LittleText {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.DestinationImage {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 9px;
+}
+
+.PriceSection {
+    margin-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.PriceSection > span {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.BookPrice {
+    padding: 8px 10px;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.BookPrice:hover {
+    background: black;
+    color: white;
+}
+
+/* Top Destination */
+
+#Best {
+    width: 100vw;
+    padding: 50px;
+}
+
+.TopBest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TownButtonContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.TownButton {
+    padding:7px 25px;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.TownButton:focus {
+    background: black;
+    color: white;
+}
+
+.BottomBest {
+    width: 70%;
+    margin: auto;
+}
+
+.TownContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+}
+
+/* Customer */
+
+#Customer {
+    width: 100vw;
+    height: 90vh;
+    padding: 0 50px;
+    background-image: url('../Assets/Images.png');
+    background-position: center Left 10%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.rightCustomer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+}
+
+.CustomerTitle {
+    width: 80%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.CustomerTitle:after {
+    content: '';
+    background: #FFD482;
+    width: 10%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.AvisContainer {
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.Avis {
+    font-size: 0.9rem;
+}
+
+
+.StarContainer {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Star {
+    color: #FFC14B;
+}
+
+.leftButtonAvis, .rightButtonAvis {
+    position: absolute;
+    bottom: 10%;
+    padding: 7px 9px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s
+}
+
+.rightButtonAvis {
+    right: 5%;
+    background: black;
+    color: #FAF8ED;
+}
+
+.rightButtonAvis:hover {
+    background: transparent;
+    color: black;
+}
+
+.leftButtonAvis:hover{
+    background: black;
+    color: #FAF8ED;
+}
+
+.leftButtonAvis {
+    right: 15%;
+}
+
+/* Newsletter */
+
+#Newletter {
+    width: 90%;
+    border-radius: 14px;
+    background: #FFC14B;
+    margin: 50px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TitleNew {
+    font-size: 2rem;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.TextNew {
+    width: 45%;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+#Mail {
+    width: 140%;
+    border: 0;
+    padding: 10px;
+    border-radius: 9px;
+    transform: translateX(-15%);
+    z-index: 10;
+}
+
+.SendNew {
+    font-size: 0.8rem;
+    padding: 8px 8px;
+    border-radius: 50%;
+    background: #F66F4D;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: -35px;
+    z-index: 999;
+}
+
+/* Footer */
+
+#Footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 100px;
+    height: 200px;
+}
+
+.FooterLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.Social {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Social > i {
+    cursor: pointer;
+    color: black;
+    transition: color 0.2s;
+}
+
+.Social > i:hover {
+    color: #F66F4D
+}
+
+.FooterContainer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+}
+
+.FooterOnglet, .OngletFooterContainer {
+    height: 80%;
+}
+
+.OngletFooterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.OngletFooterContainer > li:hover {
+    color: black;
+    cursor: pointer;
+}
