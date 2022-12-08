@@ -562,7 +562,7 @@ li {
 }
 
 /* PC View */
-
+/* 
 @media only screen and (min-width: 1024px) {
     .OngletContainer{
         margin: auto;
@@ -618,4 +618,4 @@ li {
     .Categories > h5 {
         font-size: 1.5rem;
     }
-}
+} */
