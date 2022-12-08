@@ -562,60 +562,9 @@ li {
 }
 
 /* PC View */
-/* 
-@media only screen and (min-width: 1024px) {
-    .OngletContainer{
-        margin: auto;
-    }
 
+@media only screen and (min-width: 1024px) {
     #Hero {
         background-size: 40%;
-        margin-top: 5%;
     }
-
-    .HeroLeft > h1 {
-        font-size: 6rem;
-        line-height: 10rem;
-    }
-
-    .HeroLeft > p{
-        font-size: 1.5rem;
-    }
-
-    .Search{
-        font-size: 3rem;
-    }
-
-    .ChosePlace {
-        border-radius: 100px;
-    }
-
-    .ChoiceContainer {
-        padding: 30px 20px 30px 40px;
-    }
-
-    .ChoiceContainer > li > h4 {
-        font-size: 1.5rem !important;
-    }
-
-    #Input {
-        font-size: 1.5rem;
-    }
-
-    .TopCate, .TopDesti {
-        width: 50%;
-        margin-bottom: 50px;
-    }
-
-    .Text {
-        font-size: 1.5rem;
-    }
-
-    .Categories {
-        width: 15%;
-    }
-
-    .Categories > h5 {
-        font-size: 1.5rem;
-    }
-} */
+}
