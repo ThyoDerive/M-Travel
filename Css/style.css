@@ -350,54 +350,6 @@ li {
     color: white;
 }
 
-/* Top Destination */
-
-#Best {
-    width: 100vw;
-    padding: 50px;
-}
-
-.TopBest {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.TownButtonContainer {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.TownButton {
-    padding:7px 25px;
-    background: transparent;
-    color: black;
-    border: 1px solid black;
-    border-radius: 20px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.TownButton:focus {
-    background: black;
-    color: white;
-}
-
-.BottomBest {
-    width: 70%;
-    margin: auto;
-}
-
-.TownContainer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
-}
-
 /* Customer */
 
 #Customer {
@@ -607,4 +559,63 @@ li {
 .OngletFooterContainer > li:hover {
     color: black;
     cursor: pointer;
+}
+
+/* PC View */
+
+@media only screen and (min-width: 1024px) {
+    .OngletContainer{
+        margin: auto;
+    }
+
+    #Hero {
+        background-size: 40%;
+        margin-top: 5%;
+    }
+
+    .HeroLeft > h1 {
+        font-size: 6rem;
+        line-height: 10rem;
+    }
+
+    .HeroLeft > p{
+        font-size: 1.5rem;
+    }
+
+    .Search{
+        font-size: 3rem;
+    }
+
+    .ChosePlace {
+        border-radius: 100px;
+    }
+
+    .ChoiceContainer {
+        padding: 30px 20px 30px 40px;
+    }
+
+    .ChoiceContainer > li > h4 {
+        font-size: 1.5rem !important;
+    }
+
+    #Input {
+        font-size: 1.5rem;
+    }
+
+    .TopCate, .TopDesti {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .Text {
+        font-size: 1.5rem;
+    }
+
+    .Categories {
+        width: 15%;
+    }
+
+    .Categories > h5 {
+        font-size: 1.5rem;
+    }
 }
