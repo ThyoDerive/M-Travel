@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-size: 20px;
     font-family: 'Inter', sans-serif;
@@ -100,7 +104,7 @@ li {
     flex-direction: column;
 }
 
-.HeroLeft > h1 {
+.TopHero > h1 {
     letter-spacing: 5px;
     font-size: 3.5rem;
     font-weight: 600;
@@ -108,7 +112,7 @@ li {
     margin: 0;
 }
 
-.HeroLeft > p {
+.TopHero > p {
     font-size: 0.9rem;
 }
 
@@ -561,10 +565,328 @@ li {
     cursor: pointer;
 }
 
-/* PC View */
+/* Tablette View */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+    #Navbar {
+        justify-content: space-between;
+    }
+
+    .OngletContainer {
+        margin: 0;
+        width: 50%;
+    }
+
+    .Onglet {
+        font-size: 0.9rem;
+    }
+
     #Hero {
+        background-image: none;
+    }
+
+    .HeroLeft {
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    }
+
+    .TopHero{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .ChoiceContainer > li > h4 {
+        font-size: 1.5rem !important;
+    }
+
+    #Input {
+        font-size: 1.1rem;
+        margin: 0 10px 0 0;
+    }
+
+    .TopCate, .TopDesti {
+        width: 50%;
+    }
+
+    .Categories {
+        width: 15%;
+    }
+
+    #Adventure {
+        flex-direction: column;
+        background-position: top center;
+        height: 60vh;
+    }
+
+    .AdventureRight {
+        width: 100%;
+        text-align: center;
+        height: 60%;
+        justify-content: space-evenly;
+    }
+
+    .AdventureRight > p {
+        margin: auto;
+    }
+
+    .GreatInfoContainer {
+        margin-top: 50px;
+    }
+
+    #Customer {
+        flex-direction: column;
+        background-position: top center;
+        height: 40vh;
+        margin: 100px 0 200px 0;
+    }
+
+    .rightCustomer {
+        width: 100%;
+        height: 35%;
+    }
+
+    .CustomerTitle, .AvisContainer {
+        margin: auto;
+    }
+
+    #Footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 350px;
+    }
+
+    .Footerleft {
+        margin-top: 50px;
+    }
+
+    .FooterOnglet > h5 {
+        margin: 30px 0;
+    }
+
+    .FooterContainer {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .OngletFooterContainer {
+        justify-content: none;
+    }
+
+    .OngletFooterContainer > li {
+        margin: 5px 0;
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #Navbar {
+        margin: 30px auto;
+    }
+
+    .LogoNavbar {
+        margin: auto;
+    }
+
+    .OngletContainer, .Book {
+        display: none;
+    }   
+
+    #Hero {
+        background-image: none;
+    }
+
+    #Hero {
+        background-image: none;
+        padding: 0px 10px;
+    }
+
+    .HeroLeft {
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    }
+
+    .TopHero >  h1 {
+        font-size: 2rem;
+    }
+    
+    .TopHero > p {
+        font-size: 0.9rem;
+    }
+
+    .TopHero{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ChoiceContainer > li > h4 {
+        font-size: 0.8rem !important;
+    }
+
+    #Input {
+        font-size: 0.6rem;
+        margin: 0 10px 0 0;
+        width: 90px;
+    }
+
+    .Search {
+        font-size: 1rem;
+    }
+
+    #Categories{
+        padding: 0 20px;
+    }
+
+    .TopCate, .TopDesti {
+        width: 80%;
+    }
+
+    .Title {
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    
+    .Text {
+        font-size: 0.9rem;
+        margin: 10px 0 30px 0;
+    }
+    
+    .leftButton, .rightButton {
+        padding: 9px 11px;
+    }
+
+    .leftButton {
+        right: 20%;
+    }
+
+    .CategoriesContainer{
+        display: grid;
+        grid: auto / 1fr 1fr;
+        gap: 20px 25%;
+        margin: auto;
+        width: 100%;
+    }
+
+    .Categories {
+        width: 100%;
+    }
+
+    #Adventure {
+        flex-direction: column;
+        background-position: top center;
+        height: 75vh;
+        margin: 0;
+        background-size: 45%;
+        margin-bottom: 35%;
+        padding: 20px;
+    }
+
+    .AdventureRight {
+        width: 100%;
+        text-align: center;
+        height: 60%;
+    }
+
+    .AdventureRight > p {
+        margin: auto;
+    }
+
+    .GreatInfo {
+        height: 100px;
+        width: 100px;
+        padding: 20px !important;
+        margin: 20px 5px;
+    }
+
+    .GreatInfo > h1 {
+        color: #F66F4D;
+        font-size: 1rem;
+    }
+    
+    .GreatInfo > p {
+        margin-top: 20px;
+        font-size: 0.7rem
+    }
+
+    #Destination {
+        padding: 0 20px;
+    }
+
+    .Destination {
+        width: 100%;
+    }
+
+    .DestinationImage {
+        width: 250px;
+    }
+
+    #Customer {
+        flex-direction: column;
+        background-position: top center;
         background-size: 40%;
+        height: 50vh;
+        margin: 100px 0 200px 0;
+        padding: 0 20px;
+    }
+
+    .rightCustomer {
+        width: 100%;
+        height: 35%;
+    }
+
+    .CustomerTitle, .AvisContainer {
+        margin: auto;
+    }
+
+    .AvisContainer {
+        margin-top: 20px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .leftButtonAvis {
+        right: 20%;
+    }
+
+    .TitleNew {
+        text-align: center;
+    }
+
+    .TextNew {
+        width: 100%;
+    }
+
+    #Footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100vh;
+        margin: 585px 0 0 0;
+    }
+
+    .Footerleft {
+        margin-top: 280px;
+    }
+
+    .FooterOnglet > h5 {
+        margin: 80px 0 20px 0;
+    }
+
+    .FooterContainer {
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .OngletFooterContainer {
+        justify-content: none;
+    }
+
+    .OngletFooterContainer > li {
+        margin: 5px 0;
     }
 }
