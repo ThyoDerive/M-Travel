@@ -707,6 +707,7 @@ li {
         justify-content: space-evenly;
         text-align: center;
         width: 100%;
+        align-items: center;
     }
 
     .TopHero >  h1 {
@@ -720,10 +721,6 @@ li {
     .TopHero{
         margin: 0 auto;
         width: 100%;
-    }
-
-    .ChosePlace, .ChoiceContainer {
-        margin: 0 auto;
     }
 
     .ChoiceContainer > li > h4 {
