@@ -722,6 +722,10 @@ li {
         width: 100%;
     }
 
+    .ChosePlace, .ChoiceContainer {
+        margin: 0 auto;
+    }
+
     .ChoiceContainer > li > h4 {
         font-size: 0.8rem !important;
     }
